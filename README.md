@@ -75,7 +75,7 @@ The connected device would then open the browser to load the webpage :  ```192.1
 The user would select their MAC address and name the device.
 After successfully registering (upto 16 devices), the user can click on *"Start Sniffing"* button to enter the next phase.
 
-[Click here for demo](https://youtu.be/RW2W8_IpJeo)
+### [Click here for demo](https://youtu.be/RW2W8_IpJeo)
 
 
 The MCU will now keep looping between sniffing and updating ubidots phase.
@@ -102,9 +102,9 @@ After using an exponentially decaying function that converts RSSI into distance 
 The formula we used:
  > Distance = -8.98871 * log ( 1982.22 * RSSI)
 
-[Click here to see the sniffing mode result](https://youtu.be/biVvQgH-Nvw)
+### [Click here to see the sniffing mode result](https://youtu.be/biVvQgH-Nvw)
 
-[Click here for setting up sniffing mode](https://youtu.be/RW2W8_IpJeo)
+### [Click here for setting up sniffing mode](https://youtu.be/RW2W8_IpJeo)
 
 ### III. Updating the Ubidots Dashboard
 ``` 
@@ -124,11 +124,17 @@ Each object being a key-value pair. Each MAC address that the MCU board recognis
 Shown is the graph that is accessible on the ubidots dashboard.
 ![Ubidots graph](./media/ubidots.png)
 
-[Click here for dashboard demo (part A)](https://youtu.be/xt10kLhuXAA)
+### [Click here for dashboard demo (part A)](https://youtu.be/xt10kLhuXAA)
 
-[Click here for dashboard demo (part B)](https://youtu.be/2JbTY0rnBV0)
+### [Click here for dashboard demo (part B)](https://youtu.be/2JbTY0rnBV0)
+
+
 
 ## Resources
 
 For more information on the design go to: https://www.hackster.io/ricardooliveira/esp8266-friend-detector-12542e
+
+NullByte's guide to set up a proximity detector: https://null-byte.wonderhowto.com/how-to/detect-when-device-is-nearby-with-esp8266-friend-detector-0188642/
+
+Proximity detection rssi vs dist graph for ESP8266 boards: https://www.researchgate.net/publication/322877438_Estimate_distance_measurement_using_NodeMCU_ESP8266_based_on_RSSI_technique
 
