@@ -7,7 +7,7 @@
 const char *connect_ssid = "Prox_Connector";
 const char* password = "admin12345";
 
-bool web_nigga = true;
+bool web_helper = true;
 
 IPAddress connect_ip(192, 169, 69, 69);
 IPAddress connect_gateway(192, 169, 69, 69);
@@ -55,7 +55,7 @@ void handle_error(){
 }
 
 void handle_stopWebNiggering() {
-   web_nigga = false;
+   web_helper = false;
    server.send(200, "text/plain", "Web Server Stopped");  
 }
 
@@ -93,7 +93,7 @@ void load_webpage() {
     int start_time = millis();
     int end_time = millis();
 
-    while( web_nigga ) {
+    while( web_helper ) {
       server.handleClient();
       end_time = millis();
     }
